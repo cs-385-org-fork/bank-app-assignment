@@ -42,7 +42,7 @@
             btnCreateAccount.BackColor = Color.FromArgb(128, 128, 255);
             btnCreateAccount.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCreateAccount.ForeColor = Color.Green;
-            btnCreateAccount.Location = new Point(281, 300);
+            btnCreateAccount.Location = new Point(280, 314);
             btnCreateAccount.Name = "btnCreateAccount";
             btnCreateAccount.Size = new Size(230, 73);
             btnCreateAccount.TabIndex = 0;
@@ -70,7 +70,7 @@
             // lblBalance
             // 
             lblBalance.AutoSize = true;
-            lblBalance.Location = new Point(120, 109);
+            lblBalance.Location = new Point(116, 112);
             lblBalance.Name = "lblBalance";
             lblBalance.Size = new Size(105, 20);
             lblBalance.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             // txtBalance
             // 
-            txtBalance.Location = new Point(120, 151);
+            txtBalance.Location = new Point(116, 151);
             txtBalance.Name = "txtBalance";
             txtBalance.Size = new Size(196, 27);
             txtBalance.TabIndex = 5;
