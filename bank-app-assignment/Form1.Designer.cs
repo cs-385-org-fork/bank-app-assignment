@@ -35,6 +35,11 @@
             txtNumber = new TextBox();
             txtBalance = new TextBox();
             txtName = new TextBox();
+            lblCurrentBalance = new Label();
+            txtDeposit = new TextBox();
+            txtWithdraw = new TextBox();
+            btnDeposit = new Button();
+            btnWithdraw = new Button();
             SuspendLayout();
             // 
             // btnCreateAccount
@@ -42,10 +47,9 @@
             btnCreateAccount.BackColor = SystemColors.Control;
             btnCreateAccount.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCreateAccount.ForeColor = Color.Green;
-            btnCreateAccount.Location = new Point(245, 236);
-            btnCreateAccount.Margin = new Padding(3, 2, 3, 2);
+            btnCreateAccount.Location = new Point(274, 184);
             btnCreateAccount.Name = "btnCreateAccount";
-            btnCreateAccount.Size = new Size(201, 55);
+            btnCreateAccount.Size = new Size(230, 73);
             btnCreateAccount.TabIndex = 0;
             btnCreateAccount.Text = "Create Account";
             btnCreateAccount.UseVisualStyleBackColor = false;
@@ -53,59 +57,102 @@
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(102, 19);
+            lblName.Location = new Point(117, 25);
             lblName.Name = "lblName";
-            lblName.Size = new Size(42, 15);
+            lblName.Size = new Size(52, 20);
             lblName.TabIndex = 1;
             lblName.Text = "Name:";
             // 
             // lblNumber
             // 
             lblNumber.AutoSize = true;
-            lblNumber.Location = new Point(409, 19);
+            lblNumber.Location = new Point(467, 25);
             lblNumber.Name = "lblNumber";
-            lblNumber.Size = new Size(51, 15);
+            lblNumber.Size = new Size(63, 20);
             lblNumber.TabIndex = 2;
             lblNumber.Text = "Number";
             // 
             // lblBalance
             // 
             lblBalance.AutoSize = true;
-            lblBalance.Location = new Point(102, 84);
+            lblBalance.Location = new Point(117, 90);
             lblBalance.Name = "lblBalance";
-            lblBalance.Size = new Size(83, 15);
+            lblBalance.Size = new Size(105, 20);
             lblBalance.TabIndex = 3;
             lblBalance.Text = "Initial Balance:";
             // 
             // txtNumber
             // 
-            txtNumber.Location = new Point(409, 36);
-            txtNumber.Margin = new Padding(3, 2, 3, 2);
+            txtNumber.Location = new Point(467, 48);
             txtNumber.Name = "txtNumber";
-            txtNumber.Size = new Size(167, 23);
+            txtNumber.Size = new Size(190, 27);
             txtNumber.TabIndex = 4;
             // 
             // txtBalance
             // 
-            txtBalance.Location = new Point(102, 113);
-            txtBalance.Margin = new Padding(3, 2, 3, 2);
+            txtBalance.Location = new Point(117, 125);
             txtBalance.Name = "txtBalance";
-            txtBalance.Size = new Size(172, 23);
+            txtBalance.Size = new Size(196, 27);
             txtBalance.TabIndex = 5;
             // 
             // txtName
             // 
-            txtName.Location = new Point(102, 36);
-            txtName.Margin = new Padding(3, 2, 3, 2);
+            txtName.Location = new Point(117, 48);
             txtName.Name = "txtName";
-            txtName.Size = new Size(176, 23);
+            txtName.Size = new Size(201, 27);
             txtName.TabIndex = 6;
+            // 
+            // lblCurrentBalance
+            // 
+            lblCurrentBalance.AutoSize = true;
+            lblCurrentBalance.Location = new Point(119, 291);
+            lblCurrentBalance.Name = "lblCurrentBalance";
+            lblCurrentBalance.Size = new Size(116, 20);
+            lblCurrentBalance.TabIndex = 7;
+            lblCurrentBalance.Text = "Current Balance:";
+            // 
+            // txtDeposit
+            // 
+            txtDeposit.Location = new Point(119, 340);
+            txtDeposit.Name = "txtDeposit";
+            txtDeposit.Size = new Size(125, 27);
+            txtDeposit.TabIndex = 8;
+            // 
+            // txtWithdraw
+            // 
+            txtWithdraw.Location = new Point(484, 340);
+            txtWithdraw.Name = "txtWithdraw";
+            txtWithdraw.Size = new Size(125, 27);
+            txtWithdraw.TabIndex = 9;
+            // 
+            // btnDeposit
+            // 
+            btnDeposit.Location = new Point(128, 373);
+            btnDeposit.Name = "btnDeposit";
+            btnDeposit.Size = new Size(94, 29);
+            btnDeposit.TabIndex = 10;
+            btnDeposit.Text = "Deposit";
+            btnDeposit.UseVisualStyleBackColor = true;
+            // 
+            // btnWithdraw
+            // 
+            btnWithdraw.Location = new Point(500, 373);
+            btnWithdraw.Name = "btnWithdraw";
+            btnWithdraw.Size = new Size(94, 29);
+            btnWithdraw.TabIndex = 11;
+            btnWithdraw.Text = "Withdraw";
+            btnWithdraw.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 451);
+            Controls.Add(btnWithdraw);
+            Controls.Add(btnDeposit);
+            Controls.Add(txtWithdraw);
+            Controls.Add(txtDeposit);
+            Controls.Add(lblCurrentBalance);
             Controls.Add(txtName);
             Controls.Add(txtBalance);
             Controls.Add(txtNumber);
@@ -113,7 +160,6 @@
             Controls.Add(lblNumber);
             Controls.Add(lblName);
             Controls.Add(btnCreateAccount);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -129,5 +175,10 @@
         private TextBox txtNumber;
         private TextBox txtBalance;
         private TextBox txtName;
+        private Label lblCurrentBalance;
+        private TextBox txtDeposit;
+        private TextBox txtWithdraw;
+        private Button btnDeposit;
+        private Button btnWithdraw;
     }
 }
