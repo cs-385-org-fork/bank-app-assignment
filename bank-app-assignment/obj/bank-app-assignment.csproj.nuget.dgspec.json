@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\source\\repos\\bank-app-assignment\\bank-app-assignment\\bank-app-assignment.csproj": {}
+    "C:\\Users\\ckler\\source\\repos\\bank-app-assignment2\\bank-app-assignment\\bank-app-assignment.csproj": {}
   },
   "projects": {
-    "Z:\\source\\repos\\bank-app-assignment\\bank-app-assignment\\bank-app-assignment.csproj": {
+    "C:\\Users\\ckler\\source\\repos\\bank-app-assignment2\\bank-app-assignment\\bank-app-assignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\source\\repos\\bank-app-assignment\\bank-app-assignment\\bank-app-assignment.csproj",
+        "projectUniqueName": "C:\\Users\\ckler\\source\\repos\\bank-app-assignment2\\bank-app-assignment\\bank-app-assignment.csproj",
         "projectName": "bank-app-assignment",
-        "projectPath": "Z:\\source\\repos\\bank-app-assignment\\bank-app-assignment\\bank-app-assignment.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "Z:\\source\\repos\\bank-app-assignment\\bank-app-assignment\\obj\\",
+        "projectPath": "C:\\Users\\ckler\\source\\repos\\bank-app-assignment2\\bank-app-assignment\\bank-app-assignment.csproj",
+        "packagesPath": "C:\\Users\\ckler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ckler\\source\\repos\\bank-app-assignment2\\bank-app-assignment\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ckler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0-windows": {
