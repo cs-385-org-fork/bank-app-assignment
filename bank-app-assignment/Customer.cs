@@ -8,10 +8,10 @@ namespace bank_app_assignment
 {
     internal class Customer
     {
-        private int AccountNumber { get; set; }
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private double Balance { get; set; }
+      public int AccountNumber { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public double Balance { get; set; }
 
         public double DepositTo(int account, double amount)
         {
