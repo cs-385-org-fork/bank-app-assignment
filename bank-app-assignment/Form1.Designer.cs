@@ -141,6 +141,7 @@
             btnDeposit.TabIndex = 10;
             btnDeposit.Text = "Deposit";
             btnDeposit.UseVisualStyleBackColor = true;
+            btnDeposit.Click += btnDeposit_Click;
             // 
             // btnWithdraw
             // 
@@ -151,6 +152,7 @@
             btnWithdraw.TabIndex = 11;
             btnWithdraw.Text = "Withdraw";
             btnWithdraw.UseVisualStyleBackColor = true;
+            btnWithdraw.Click += btnWithdraw_Click;
             // 
             // Form1
             // 
