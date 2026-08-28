@@ -89,22 +89,22 @@ namespace bank_app_assignment
         {
             int accountID = account;
             double amountAdded = amount;
-            if (accountID == AccountNumber)
+            if (accountID == _accountNumber)
             {
-                Balance += amountAdded;
+                _balance += amountAdded;
 
             }
-            return Balance;
+            return _balance;
         }
         public double WithdrawFrom(int account, double amount)
         {
             int accountID = account;
             double amountWithdrawn = amount;
-            if (accountID == AccountNumber)
+            if (accountID == _accountNumber)
             {
-                Balance -= amountWithdrawn;
+                _balance -= amountWithdrawn;
             }
-            return Balance;
+            return _balance;
         }
         public Customer()
         {
