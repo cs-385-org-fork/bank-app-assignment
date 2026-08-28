@@ -6,5 +6,6 @@ namespace bank_app_assignment
 {
     internal class StudentClass
     {
+        tfuftutf
     }
 }
