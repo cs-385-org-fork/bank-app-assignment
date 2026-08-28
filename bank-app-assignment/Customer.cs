@@ -8,38 +8,38 @@ namespace bank_app_assignment
 {
     internal class Customer
     {
-        private int accountNumber { get; set; }
-        private string firstName { get; set; }
-        private string lastName { get; set; }
-        private double balance { get; set; }
+        private int AccountNumber { get; set; }
+        private string FirstName { get; set; }
+        private string LastName { get; set; }
+        private double Balance { get; set; }
 
-        public double depositTo(int account, double amount)
+        public double DepositTo(int account, double amount)
         {
             int accountID = account;
             double amountAdded = amount;
-            if (accountID == accountNumber)
+            if (accountID == AccountNumber)
             {
-                balance += amountAdded;
+                Balance += amountAdded;
 
             }
-            return balance;
+            return Balance;
         }
-        public double withdrawFrom(int account, double amount)
+        public double WithdrawFrom(int account, double amount)
         {
             int accountID = account;
             double amountWithdrawn = amount;
-            if (accountID == accountNumber)
+            if (accountID == AccountNumber)
             {
-                balance -= amountWithdrawn;
+                Balance -= amountWithdrawn;
             }
-            return balance;
+            return Balance;
         }
         public Customer()
         {
-            accountNumber = 0;
-            firstName = "";
-            lastName = "";
-            balance = 0.0;
+            AccountNumber = 0;
+            FirstName = "";
+            LastName = "";
+            Balance = 0.0;
         }
         
     }
