@@ -108,10 +108,10 @@ namespace bank_app_assignment
         }
         public Customer()
         {
-            AccountNumber = 0;
-            FirstName = "";
-            LastName = "";
-            Balance = 0.0;
+            _accountNumber = 0;
+            _firstName = "";
+            _lastName = "";
+            _balance = 0.0;
         }
         
     }
