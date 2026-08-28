@@ -123,6 +123,7 @@
             txtDeposit.Name = "txtDeposit";
             txtDeposit.Size = new Size(110, 23);
             txtDeposit.TabIndex = 8;
+            txtDeposit.KeyDown += txtDeposit_KeyDown;
             // 
             // txtWithdraw
             // 
@@ -131,6 +132,7 @@
             txtWithdraw.Name = "txtWithdraw";
             txtWithdraw.Size = new Size(110, 23);
             txtWithdraw.TabIndex = 9;
+            txtWithdraw.KeyDown += txtWithdraw_KeyDown;
             // 
             // btnDeposit
             // 

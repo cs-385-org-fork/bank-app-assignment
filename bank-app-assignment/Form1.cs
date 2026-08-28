@@ -17,21 +17,37 @@ namespace bank_app_assignment
             cust.AccountNumber = Int32.Parse(txtNumber.Text);
             cust.Balance = Double.Parse(txtBalance.Text);
 
-            lblCurrentBalance.Text = ("Current Balance: $" + cust.Balance);
+            lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance));
         }
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
             cust.DepositTo(Int32.Parse(txtNumber.Text), Double.Parse(txtDeposit.Text));
-            lblCurrentBalance.Text = ("Current Balance: $" + cust.Balance);
+            lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance));
             Console.WriteLine(cust.Balance);
         }
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
             cust.WithdrawFrom(Int32.Parse(txtNumber.Text), Double.Parse(txtWithdraw.Text));
-            lblCurrentBalance.Text = ("Current Balance: $" + cust.Balance);
+            lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance));
             Console.WriteLine(cust.Balance);
+        }
+
+        private void txtDeposit_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDeposit_Click(sender, e);
+            }
+        }
+
+        private void txtWithdraw_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnWithdraw_Click(sender, e);
+            }
         }
     }
 }
