@@ -1,3 +1,5 @@
+using System.Reflection.Emit;
+
 namespace bank_app_assignment
 {
     public partial class Form1 : Form
@@ -23,14 +25,16 @@ namespace bank_app_assignment
         private void btnDeposit_Click(object sender, EventArgs e)
         {
             cust.DepositTo(Int32.Parse(txtNumber.Text), Double.Parse(txtDeposit.Text));
-            lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance));
+            if (cust.Balance < 0) { lblCurrentBalance.ForeColor = System.Drawing.Color.Red; lblCurrentBalance.Text = ("Current Balance: -" + String.Format("{0:C2}", cust.Balance) + " Overdrawn"); }
+            else { lblCurrentBalance.ForeColor = System.Drawing.Color.Black; lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance)); }
             Console.WriteLine(cust.Balance);
         }
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
             cust.WithdrawFrom(Int32.Parse(txtNumber.Text), Double.Parse(txtWithdraw.Text));
-            lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance));
+            if (cust.Balance < 0) { lblCurrentBalance.ForeColor = System.Drawing.Color.Red; lblCurrentBalance.Text = ("Current Balance: -" + String.Format("{0:C2}", cust.Balance) + " Overdrawn"); }
+            else { lblCurrentBalance.ForeColor = System.Drawing.Color.Black; lblCurrentBalance.Text = ("Current Balance: " + String.Format("{0:C2}", cust.Balance)); }
             Console.WriteLine(cust.Balance);
         }
 
